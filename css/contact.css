@@ -1,0 +1,68 @@
+main {
+  font-size: 1.3rem;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  align-items: center;
+  max-width: 1000px;
+}
+
+h1 {
+  color: #fcb221;
+  text-align: left;
+}
+
+main > * {
+  max-width: 450px;
+  min-width: 300px;
+  width: 90%;
+  margin: 150px auto;
+}
+
+/*CONTACT US SECTION*/
+
+.contact-info-container h3 {
+  color: #fff;
+  text-align: left;
+}
+.contact-info-container strong {
+  color: #fcb221;
+
+  font-size: 1.5rem;
+}
+
+/*CONTACT FORM*/
+
+.contact-form,
+.contact-form > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form {
+  gap: 2rem;
+  width: 80%;
+  margin: 50px auto;
+}
+
+.contact-form input {
+  padding: 10px;
+}
+
+.contact-form label {
+  color: #c29130;
+}
+.contact-form button {
+  width: 100%;
+}
+
+.textarea-message {
+  min-height: 150px;
+}
+
+.contact-form-btn {
+  background-color: #4d0303;
+  padding: 20px 0;
+  cursor: pointer;
+  font-size: 1.3rem;
+}

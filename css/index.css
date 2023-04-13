@@ -1,0 +1,159 @@
+h1 {
+  color: #fff;
+  background: rgb(0, 0, 0, 0.7);
+  padding: 10px;
+  width: 100%;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+.mar-pad-reset {
+  margin: 0;
+  padding: 0;
+}
+
+/* Header img */
+.header-background-img {
+  background: url("../images/l-main-image-homepage.jpg") no-repeat;
+  background-size: cover;
+  height: 1000px;
+  background-position: center;
+  max-width: 2000px;
+  margin: 50px auto;
+  display: flex;
+  align-items: center;
+}
+
+/* Main article */
+
+.main-article-container {
+  background: #041836;
+  border-top: 1px solid #060d39;
+  border-bottom: 1px solid #060d39;
+  margin: 50px auto;
+  padding: 30px 0;
+  font-size: 1.6rem;
+}
+
+.article-header {
+  margin-bottom: 50px;
+}
+
+.article-header img {
+  min-height: 400px;
+  object-fit: cover;
+}
+
+/* Article body */
+
+.article-body-container {
+  margin: auto;
+}
+
+.article-body {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto 25px;
+}
+
+.article-body > * {
+  margin: 50px auto;
+}
+
+.release-date-container {
+  background: #272760;
+  padding: 50px 25px;
+  border-radius: 50%;
+  box-shadow: 5px 7px 5px rgb(0 0 0 / 0.2);
+}
+
+.release-date-container p {
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Pre order button*/
+.pre-order-btn-container {
+  max-width: 500px;
+  width: 100%;
+  min-width: 280px;
+  margin: 50px auto;
+}
+
+/*Now with  */
+.now-with-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  margin: auto;
+
+  max-width: 730px;
+}
+
+.now-with-container h3 {
+  text-align: justify;
+}
+
+.now-with-container > * {
+  margin: 0 auto;
+}
+
+.now-with-container li {
+  margin-bottom: 15px;
+}
+
+/* Featured games (Best sellers / trending games) */
+
+.games-section-container {
+  margin: 100px auto;
+  border-bottom: 1px solid #a77920;
+}
+
+.cta-more-games {
+  padding: 25px 40px;
+  background-color: #855801;
+  display: inline-block;
+  margin: 40px auto 0;
+  border-radius: 15px 15px 0 0;
+  border: 1px solid #a77920;
+  font-weight: bold;
+}
+
+.cta-more-games:hover {
+  background-color: #fcb221;
+  color: #0e346d;
+}
+
+.cta-more-games-container {
+  margin: auto;
+  text-align: center;
+}
+
+/*
+//////////////////////////////////////////////////////////////////////////////
+//////////////////////// MEDIA QUERIES ///////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////
+*/
+
+/* MOBILE ONLY */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.3rem;
+  }
+
+  .header-background-img {
+    height: 700px;
+  }
+}
+
+/* PADS ONLY */
+@media (min-width: 481px) and (max-width: 768px) {
+  .header-background-img {
+    height: 850px;
+  }
+}

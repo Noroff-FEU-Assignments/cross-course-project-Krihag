@@ -1,0 +1,128 @@
+h1 {
+  color: #fcb221;
+}
+
+/*GAME DESCRIPTION HEADER*/
+.article-header {
+  text-align: center;
+  font-size: 2rem;
+  background: #111;
+  padding: 100px 0 20px;
+}
+.article-header * {
+  margin: 0;
+}
+
+/*Price, avialable on devices and buy now CTA */
+.price-info-and-buy-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 50px auto;
+}
+
+.buy-cta-and-available-on {
+  display: flex;
+  justify-content: center;
+}
+
+.buy-cta-and-available-on > * {
+  padding: 20px 0;
+}
+
+.article-header-price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #5d0606;
+  width: 40%;
+}
+
+.available-on-container {
+  background: #222;
+  width: 60%;
+}
+.available-on-container i {
+  color: #fcb221;
+  margin: 20px 10px;
+}
+
+.buy-now-btn {
+  background: #014801;
+  border: 1px solid #042004;
+  padding: 40px 0;
+}
+
+/* ARTICLE/ GAME DESCRIPTION  MAIN BODY */
+
+.article-body-and-gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: auto;
+  align-items: center;
+  font-size: 1.4rem;
+}
+
+.article-main-body {
+  flex: 1;
+}
+
+.game-description-text-and-img-container {
+  display: flex;
+  gap: 4rem;
+  flex-wrap: wrap;
+  width: 80%;
+  margin-left: 20px;
+  margin: 100px auto;
+}
+
+.article-main-body h2 {
+  text-align: left;
+}
+
+.game-description-text-and-img-container > * {
+  min-width: 330px;
+}
+.game-description-text {
+  text-align: left;
+  align-items: center;
+}
+
+/*GAMEPLAY GALLERY SECTION*/
+
+.gameplay-gallery-container {
+  display: flex;
+  flex-direction: column;
+  margin: 100px auto;
+  max-width: 350px;
+  gap: 3rem;
+  padding: 20px 40px;
+}
+
+/*MOBILE ONLY */
+@media (max-width: 480px) {
+  .game-description-main-img {
+    background: url("../images/game-description-main.png") no-repeat;
+    background-size: cover;
+    background-position: top center;
+    height: 400px;
+  }
+
+  .game-description-text-and-img-container > * {
+    min-width: 250px;
+  }
+}
+
+/* MOBILE AND PADS*/
+@media (max-width: 768px) {
+}
+
+/* PADS AND DESKTOPS*/
+@media (min-width: 481px) {
+  .game-description-main-img {
+    background: url("../images/game-description-main-big.png") no-repeat;
+    height: 450px;
+    background-position: top center;
+  }
+}

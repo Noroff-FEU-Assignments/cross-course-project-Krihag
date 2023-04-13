@@ -1,0 +1,310 @@
+/* Main selectors*/
+body {
+  margin: 0;
+  background: linear-gradient(#39479e, #292424) no-repeat;
+
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+p,
+div,
+a,
+button,
+h1 {
+  color: #fff;
+}
+
+header i,
+header a,
+header button,
+h2,
+h3 {
+  color: #fcb221;
+}
+
+h1,
+h2,
+h3,
+.align-center {
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  display: inline;
+  object-fit: cover;
+}
+
+ul {
+  padding: 0;
+}
+
+.section-width {
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* BTN */
+
+.cta-btn {
+  font-size: 1.5rem;
+  background: #852e08;
+  width: 100%;
+  padding: 25px 0;
+  margin: auto;
+  border: 1px solid #060d39;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cta-btn:hover {
+  background: #e55416;
+}
+
+/* hide checkbox to hamburger menu */
+#menu-checkbox {
+  display: none;
+}
+
+/* HEADER / NAVBAR */
+header {
+  background: #0e346d;
+  border-bottom: 2px solid #060d39;
+  font-size: 1.5rem;
+}
+
+.login-register {
+  font-size: 1.3rem;
+}
+
+.header-container {
+  max-width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  padding: 10px 20px;
+  position: relative;
+}
+
+.logo {
+  color: #ff2f2f;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.search-and-cart {
+  display: flex;
+  gap: 1rem;
+}
+
+/* HEADER HOVER EFFECTS */
+nav a:hover,
+header i:hover {
+  color: #ffe461;
+}
+
+.active {
+  text-decoration: underline;
+}
+
+/* FOOTER */
+
+footer {
+  background: #0e346d;
+  font-size: 2rem;
+  padding: 60px 20px 30px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+footer i {
+  font-size: 5rem;
+}
+
+footer > * {
+  max-width: 400px;
+}
+
+.subscribe-newsletter {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.subscribe-newsletter > * {
+  padding: 20px;
+}
+
+.subscribe-newsletter button {
+  background: #852e08;
+  margin-top: 10px;
+  font-size: 2rem;
+}
+
+/* GAME COVER */
+
+.game-cover-container {
+  background-color: #232b56;
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  border: 4px solid #11152a;
+  border-radius: 8px;
+  box-shadow: 8px 10px 7px rgb(0 0 0 / 0.2);
+  margin: auto;
+  width: 90%;
+  font-size: 1.1rem;
+}
+
+.game-cover-container img {
+  height: 180px;
+  object-position: top center;
+}
+
+.game-info-container {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+}
+
+.game-info-container * {
+  margin: 0;
+}
+
+.game-cover-container:hover {
+  border: 4px solid #fcb221;
+}
+
+/* GAMES CONTAINER */
+
+.games-container {
+  margin: 20px auto;
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  padding: 0 10px;
+}
+
+.trending-games {
+  flex-direction: row-reverse;
+}
+
+/*
+//////////////////////////////////////////////////////////////////////////////
+//////////////////////// MEDIA QUERIES ///////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////
+*/
+
+/* MOBILE ONLY */
+
+@media (max-width: 480px) {
+  html {
+    font-size: 80%;
+  }
+
+  .game-cover-container {
+    font-size: 130%;
+  }
+}
+
+/*MOBILE AND PADS */
+
+@media (max-width: 768px) {
+  /* this margin is for resetting header margin on phone + pads since its position fixed*/
+  main {
+    margin-top: 57px;
+  }
+
+  /*HEADER */
+  header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+
+  .header-container {
+    justify-content: space-around;
+    gap: 1.5rem;
+  }
+
+  /* NAVBAR / HAMBURGER MENU STYLING */
+  .nav-bar-and-login-register {
+    display: none;
+    background: #0e346d;
+    width: 100%;
+    position: absolute;
+    top: 50px;
+    padding-top: 40px;
+    border-bottom: 2px solid #060d39;
+  }
+
+  .nav-bar-and-login-register a {
+    display: block;
+    margin: 50px auto;
+    padding: 5px 0;
+    position: relative;
+
+    width: 80%;
+    max-width: 450px;
+    min-width: 250px;
+  }
+
+  .login-register a {
+    background: #852e08;
+    padding: 20px 0;
+    text-align: center;
+    border: 1px solid #222;
+    color: #fff;
+  }
+  nav a::after {
+    content: ">";
+    position: absolute;
+    right: 0px;
+  }
+
+  /* HOVER EFFECT MOBILE /PADS */
+  .login-register a:hover {
+    background: #e55416;
+  }
+
+  /* HAMBURGER MENU CLICKED */
+  #menu-checkbox:checked ~ .nav-bar-and-login-register {
+    display: block;
+  }
+}
+
+/* LAPTOPS / DESKTOPS ONLY */
+@media (min-width: 769px) {
+  /* HEADER */
+  .header-container {
+    padding: 50px 20px 20px;
+  }
+  header button {
+    background: none;
+  }
+  .label-hamburger {
+    display: none;
+  }
+  .nav-bar-and-login-register {
+    display: flex;
+    justify-content: space-evenly;
+    flex: 1;
+  }
+
+  nav,
+  .login-register {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1.5rem;
+  }
+}
