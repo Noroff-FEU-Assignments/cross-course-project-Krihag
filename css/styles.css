@@ -136,18 +136,25 @@ footer {
   background: #0e346d;
   font-size: 2rem;
   padding: 60px 20px 30px;
+}
+
+.footer-container {
+  max-width: 1200px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  margin: auto;
 }
 
 footer i {
   font-size: 5rem;
 }
 
-footer > * {
+.footer-container > * {
   max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .subscribe-newsletter {
