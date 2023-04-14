@@ -9,6 +9,10 @@ h1 {
   font-size: 2rem;
 }
 
+.about-us-text {
+  max-width: 90%;
+}
+
 /* MOBILE ONLY */
 @media (max-width: 480px) {
   .about-us-main-img {

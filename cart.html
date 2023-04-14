@@ -4,12 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Gamehub The Universe Of Games" />
+    <meta name="description" content="Shopping cart products Gamehub" />
     <script
       src="https://kit.fontawesome.com/dd3a44b56e.js"
       crossorigin="anonymous"
     ></script>
-    <title>Gamehub - About Us</title>
+    <title>Gamehub - Cart</title>
 
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -21,7 +21,7 @@
 
     <!-- CSS FILES -->
     <link rel="stylesheet" href="CSS/styles.css" />
-    <link rel="stylesheet" href="CSS/about.css" />
+    <link rel="stylesheet" href="CSS/cart.css" />
   </head>
   <body>
     <!-- HEADER AREA -->
@@ -39,7 +39,7 @@
           <nav>
             <a href="index.html">Home</a>
             <a href="games.html">Games</a>
-            <a href="about.html" class="active">About</a>
+            <a href="about.html">About</a>
             <a href="contact.html">Contact</a>
           </nav>
           <div class="login-register">
@@ -56,25 +56,52 @@
       </div>
     </header>
     <main>
-      <section class="about-us-container">
-        <div class="about-us-main-img"></div>
-        <div class="about-us-text section-width">
-          <h1>About Us</h1>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque
-            distinctio quis, dolor veritatis modi, autem eos numquam maiores
-            tenetur praesentium illo, nostrum repellendus quos nesciunt vitae
-            pariatur necessitatibus officia culpa odio.
-          </p>
-          <p>
-            Ut tempora recusandae et nesciunt ratione non temporibus earum qui
-            blanditiis laborum et veritatis ipsa et accusamus rerum. Ut tempora
-            recusandae et nesciunt. Vitae pariatur necessitatibus officia culpa
-            odio.
-          </p>
+      <section class="shopping-cart-container">
+        <!-- CART ITEM 1 -->
+        <div class="cart-games-and-remove">
+          <div class="cart-games">
+            <div class="cart-item-images cart-game-1"></div>
+            <div class="cart-game-info">
+              <div class="cart-game-name">
+                <p class="game-main-title">Game Title</p>
+                <p>subtitle</p>
+              </div>
+              <p class="game-price">$39.99</p>
+            </div>
+          </div>
+          <a class="cart-remove" href="#">Remove</a>
+        </div>
+
+        <!-- CART ITEM 2 -->
+        <div class="cart-games-and-remove">
+          <div class="cart-games">
+            <div class="cart-item-images cart-game-2"></div>
+            <div class="cart-game-info">
+              <div class="cart-game-name">
+                <p class="game-main-title">Game Title</p>
+                <p>subtitle</p>
+              </div>
+              <p class="game-price">$25.00</p>
+            </div>
+          </div>
+          <a class="cart-remove" href="#">Remove</a>
         </div>
       </section>
+
+      <!-- TOTAL PRICE AND CHECKOUT BTN  -->
+      <section class="cart-total-and-checkout">
+        <div class="cart-total-price">
+          <p>Estimated total:</p>
+          <p>$64.99</p>
+        </div>
+        <a href="checkout.html">
+          <button class="cta-btn">Payment Details</button></a
+        >
+        <a href="games.html"> <button class="cta-btn">Shop More</button></a>
+      </section>
     </main>
+
+    <!-- FOOTER -->
     <footer>
       <section class="sign-up-newsletter-container">
         <h3>Newsletter</h3>

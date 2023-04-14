@@ -1,0 +1,115 @@
+main {
+  font-size: 1.3rem;
+}
+h1 {
+  color: #fcb221;
+}
+
+main input {
+  padding: 7px 0;
+  border-radius: 10px;
+}
+
+.payment-details-container {
+  margin: auto;
+}
+
+.payment-info-and-order-summary-container {
+  display: flex;
+  max-width: 750px;
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+.payment-info-and-order-summary-container {
+  margin: auto;
+}
+
+.payment-detail {
+  display: flex;
+  flex-direction: column;
+  max-width: 250px;
+  margin: 10px auto;
+}
+
+.expiration-date-and-ccv {
+  display: flex;
+  max-width: 250px;
+  gap: 2rem;
+  margin: auto;
+}
+
+.payment-ccv {
+  width: 70px;
+}
+
+/* ORDER SUMMARY */
+
+.cart-games {
+  display: flex;
+  gap: 1rem;
+}
+
+.cart-game-1 {
+  background: url("../images/digital-art-artwork-cyber-cyberpunk-neon-hd-wallpaper-thumb.jpg")
+    no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-width: 150px;
+  border-radius: 10px;
+}
+
+.cart-game-2 {
+  background: url("../images/game-cover-car-game.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-width: 150px;
+  border-radius: 10px;
+}
+
+.cart-game-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cart-game-name p {
+  margin: 0;
+}
+
+.cart-remove {
+  color: #bd3434;
+}
+
+/* ORDER SUMMARY */
+
+.order-summary {
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  max-width: 400px;
+}
+
+.order-summary a {
+}
+
+/*BUY NOW BTN*/
+.cta-checkout-buy {
+  margin: 50px auto 100px;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  max-width: 650px;
+}
+
+.cart-total-price {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  font-size: 2rem;
+}

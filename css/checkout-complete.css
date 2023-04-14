@@ -1,0 +1,40 @@
+main {
+  font-size: 2rem;
+  padding-bottom: 100px;
+  width: 90%;
+}
+
+.main-container {
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+  margin-top: 200px;
+}
+
+.fa-circle-check {
+  color: green;
+  font-size: 15rem;
+}
+
+.button-text-container {
+  margin: 100px auto;
+  max-width: 600px;
+}
+
+@media (min-width: 801px) {
+  h1 {
+    font-size: 4rem;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 800px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.6rem;
+  }
+}

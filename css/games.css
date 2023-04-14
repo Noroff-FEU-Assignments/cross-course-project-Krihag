@@ -7,7 +7,7 @@ h1 {
 /* FEATURED GAMES CONTAINER (slider) */
 .featured-games-container {
   background: #000;
-  padding: 100px 0 40px;
+  padding: 50px 0;
   overflow: hidden;
 }
 
@@ -57,7 +57,7 @@ h1 {
 
 .game-slide {
   position: relative;
-  max-width: 1200px;
+  max-width: 1000px;
   height: 600px;
   font-size: 2rem;
   display: flex;
@@ -147,10 +147,11 @@ h1 {
   }
 
   .game-slide {
-    height: 800px;
+    height: 700px;
     background-position: center center;
     background-size: contain;
     min-width: 800px;
+    width: 90%;
   }
 
   .slider-price-and-read-more {
