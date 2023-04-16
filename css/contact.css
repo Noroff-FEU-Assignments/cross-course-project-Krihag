@@ -3,7 +3,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   margin: auto;
-  align-items: center;
+  align-items: top;
   max-width: 1000px;
 }
 
@@ -16,10 +16,16 @@ main > * {
   max-width: 450px;
   min-width: 300px;
   width: 90%;
-  margin: 150px auto;
+  margin: auto;
 }
 
 /*CONTACT US SECTION*/
+
+.contact-info-container {
+  margin-top: 150px;
+  margin-bottom: 50px;
+  padding-left: 20px;
+}
 
 .contact-info-container h3 {
   color: #fff;
