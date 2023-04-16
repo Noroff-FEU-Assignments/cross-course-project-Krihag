@@ -76,6 +76,7 @@ ul {
 
 .cta-btn:hover {
   background: #e55416;
+  transition: 0.5s;
 }
 
 /* hide checkbox to hamburger menu */
@@ -113,6 +114,7 @@ header {
 
 .logo:hover {
   text-shadow: 0 0 15px #f1672b, 0 0 45px #f1672b;
+  transition: 1s;
 }
 
 .search-and-cart {
@@ -124,6 +126,7 @@ header {
 nav a:hover,
 header i:hover {
   color: #ffe461;
+  transition: 0.5s;
 }
 
 .active {
@@ -207,6 +210,7 @@ footer i {
 
 .game-cover-container:hover {
   border: 4px solid #fcb221;
+  transition: 1s;
 }
 
 /* GAMES CONTAINER */
@@ -298,9 +302,34 @@ footer i {
     right: 0px;
   }
 
+  /*FOOTER*/
+
+  footer {
+    font-size: 1.5rem;
+    margin: auto;
+  }
+
+  footer i {
+    font-size: 3rem;
+  }
+
+  .subscribe-newsletter button {
+    font-size: 1rem;
+    padding: 15px;
+    width: 75%;
+    margin: 5px auto;
+  }
+
+  .subscribe-newsletter input {
+    padding: 8px;
+    width: 70%;
+    margin: auto;
+  }
+
   /* HOVER EFFECT MOBILE /PADS */
   .login-register a:hover {
     background: #e55416;
+    transition: 0.5s;
   }
 
   /* HAMBURGER MENU CLICKED */

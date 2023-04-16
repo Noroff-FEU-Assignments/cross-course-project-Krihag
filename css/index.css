@@ -127,6 +127,7 @@ h1 {
 .cta-more-games:hover {
   background-color: #fcb221;
   color: #0e346d;
+  transition: 0.7s;
 }
 
 .cta-more-games-container {
