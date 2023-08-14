@@ -34,7 +34,7 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #5d0606;
+  background-color: #312f2f;
   width: 40%;
 }
 
@@ -48,8 +48,8 @@ h1 {
 }
 
 .buy-now-btn {
-  background: #014801;
-  border: 1px solid #042004;
+  background: #1e3f11;
+  border: 1px solid #200404;
   padding: 40px 0;
 }
 
@@ -100,12 +100,19 @@ h1 {
   padding: 20px 40px;
 }
 
+.game-on-sale {
+  display: inline-block;
+  padding: 30px 15px;
+  background: #97350e;
+  width: 80%;
+  align-self: center;
+  margin-bottom: 50px;
+  border-radius: 10px;
+}
+
 /*MOBILE ONLY */
 @media (max-width: 480px) {
   .game-description-main-img {
-    background: url("../images/game-description-main.png") no-repeat;
-    background-size: cover;
-    background-position: top center;
     height: 400px;
   }
 
@@ -121,8 +128,6 @@ h1 {
 /* PADS AND DESKTOPS*/
 @media (min-width: 481px) {
   .game-description-main-img {
-    background: url("../images/game-description-main-big.png") no-repeat;
     height: 450px;
-    background-position: top center;
   }
 }

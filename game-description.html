@@ -22,6 +22,8 @@
     <!-- CSS FILES -->
     <link rel="stylesheet" href="CSS/styles.css" />
     <link rel="stylesheet" href="CSS/game-description.css" />
+
+    <script defer type="module" src="/src/pages/gameDescription.js"></script>
   </head>
   <body>
     <!-- HEADER AREA -->
@@ -60,15 +62,15 @@
       <article class="article-container">
         <!-- Article header  -->
         <section class="article-header">
-          <div class="game-description-main-img"></div>
-          <h1>Game Title</h1>
-          <p>Subtitle</p>
+          <img class="game-description-main-img" src="../images/game-description-main-big.png"></img>
+          <h1 class="game-title">Game Title</h1>
+          <p class="game-genre">Subtitle</p>
 
           <!-- Price, availability icons and buy now cta -->
           <div class="price-info-and-buy-container">
             <div class="buy-cta-and-available-on">
               <div class="article-header-price">
-                <p>$49.99</p>
+                <p class="game-price">$49.99</p>
               </div>
               <div class="available-on-container">
                 <p>Available on:</p>

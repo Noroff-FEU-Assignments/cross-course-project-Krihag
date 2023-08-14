@@ -37,6 +37,7 @@ h3,
 .game-price,
 .game-main-title {
   color: #fcb221;
+  font-weight: 600;
 }
 
 h1,
@@ -192,7 +193,7 @@ footer i {
 }
 
 .game-cover-container img {
-  height: 180px;
+  height: 370px;
   object-position: top center;
 }
 
@@ -226,6 +227,17 @@ footer i {
 
 .trending-games {
   flex-direction: row-reverse;
+}
+
+.non-discount-price {
+  text-decoration: line-through;
+  color: #d97676;
+  font-size: 85%;
+}
+
+.on-sale {
+  color: #fcb221;
+  font-weight: 600;
 }
 
 /*
