@@ -1,5 +1,6 @@
 import fetchGames from "../Games/fetchGames.js";
 import displayGameSmall from "../Games/displayGameSmall/displayGameSmall.js";
+import gameSlider from "../Games/gameSlider/gameSlider.js";
 
 const url = "https://api.noroff.dev/api/v1/gamehub";
 const gamesContainer = document.querySelector(".games-container");
@@ -11,6 +12,9 @@ if (games.errors) {
   gamesContainer.innerHTML = `<div> ERROR: ${games.statusCode} ${games.status}</div>`;
   console.log(games);
 } else {
+  // GAME SLIDER
+  gameSlider(games);
+
   const allGames = games.map((game) => displayGameSmall(game, gamesContainer));
 
   gameCategory.addEventListener("change", function (e) {

@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="CSS/styles.css" />
     <link rel="stylesheet" href="CSS/game-description.css" />
 
+    <script defer type="module" src="/src/script.js"></script>
     <script defer type="module" src="/src/pages/gameDescription.js"></script>
   </head>
   <body>
@@ -53,7 +54,7 @@
         <!-- Search bar and cart icons -->
         <div class="search-and-cart">
           <a href="index.html"> <i class="fa-solid fa-magnifying-glass"></i></a>
-          <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+          <a href="cart.html"><i class="fa-solid fa-cart-shopping" id="cart"></i></a>
         </div>
       </div>
     </header>
@@ -81,7 +82,7 @@
                 </div>
               </div>
             </div>
-            <a href="#" class="buy-now-btn">Buy Now</a>
+            <button class="buy-now-btn">Add to Cart</button>
           </div>
         </section>
 

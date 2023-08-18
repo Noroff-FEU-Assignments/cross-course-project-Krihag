@@ -1,12 +1,14 @@
 import fetchGames from "../Games/fetchGames.js";
 import salePrice from "../Games/displayGameSmall/gameInfoContainer/gamePrice/salePrice.js";
 import discountPercent from "../Games/displayGameSmall/gameInfoContainer/gamePrice/discountPercent.js";
+import addCartItem from "../Cart/addCartItem.js";
 
 const imageContainer = document.querySelector(".game-description-main-img");
 const gameTitle = document.querySelector(".game-title");
 const gameGenre = document.querySelector(".game-genre");
 const priceContainer = document.querySelector(".price-info-and-buy-container");
 const gamePrice = document.querySelector(".game-price");
+const buyNowBtn = document.querySelector(".buy-now-btn");
 
 const url = "https://api.noroff.dev/api/v1/gamehub";
 
@@ -27,3 +29,8 @@ if (game.onSale) {
   priceContainer.prepend(discount);
   gamePrice.append(salePrice(game));
 } else gamePrice.innerText = "$" + game.price;
+
+// CART
+buyNowBtn.addEventListener("click", function () {
+  addCartItem(game);
+});

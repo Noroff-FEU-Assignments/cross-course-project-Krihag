@@ -240,6 +240,22 @@ footer i {
   font-weight: 600;
 }
 
+/* ADD TO CART */
+.add-item-to-cart {
+  position: relative;
+}
+.add-item-to-cart::after {
+  content: attr(title);
+  font-size: 50%;
+  position: absolute;
+  background: #97350e;
+  padding: 5px 8px;
+  color: #fff;
+  top: -10px;
+  left: 20px;
+  border-radius: 50%;
+}
+
 /*
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////// MEDIA QUERIES ///////////////////////////////////////

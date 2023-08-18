@@ -51,6 +51,13 @@ h1 {
   background: #1e3f11;
   border: 1px solid #200404;
   padding: 40px 0;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.buy-now-btn:hover {
+  background: #3c7c23;
+  transition: 700ms;
 }
 
 /* ARTICLE/ GAME DESCRIPTION  MAIN BODY */
@@ -109,6 +116,7 @@ h1 {
   margin-bottom: 50px;
   border-radius: 10px;
 }
+
 
 /*MOBILE ONLY */
 @media (max-width: 480px) {
