@@ -25,6 +25,9 @@
     <!-- CSS FILES -->
     <link rel="stylesheet" href="CSS/styles.css" />
     <link rel="stylesheet" href="CSS/index.css" />
+
+    <script defer type="module" src="/src/script.js"></script>
+    <script defer type="module" src="/src/pages/index.js"></script>
   </head>
   <body>
     <!-- HEADER AREA -->
@@ -54,7 +57,9 @@
         <!-- Search bar and cart icons -->
         <div class="search-and-cart">
           <a href="index.html"> <i class="fa-solid fa-magnifying-glass"></i></a>
-          <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+          <a href="cart.html"
+            ><i class="fa-solid fa-cart-shopping" id="cart"></i
+          ></a>
         </div>
       </div>
     </header>
@@ -116,256 +121,14 @@
       <section class="section-width games-section-container">
         <h2>Best Sellers</h2>
 
-        <div class="games-container">
-          <!-- GAME COVER -->
-          <a href="game-description.html" class="game-cover-container">
-            <img
-              src="images/digital-art-artwork-cyber-cyberpunk-neon-hd-wallpaper-thumb.jpg"
-              alt="Game Cover image Cyberpunk"
-            />
-            <div class="game-info-container">
-              <div class="game-name">
-                <p class="game-main-title">Game Title</p>
-                <p>Subtitle</p>
-              </div>
-              <div class="console-icons">
-                <i class="fa-brands fa-playstation"></i>
-                <i class="fa-brands fa-xbox"></i>
-                <i class="fa-solid fa-laptop"></i>
-              </div>
-              <p class="game-price">$49.99</p>
-            </div>
-          </a>
-
-          <!-- GAME COVER -->
-          <a href="game-description.html" class="game-cover-container">
-            <img
-              src="images/girl-the-city-the-game-neon-wallpaper-thumb.jpg"
-              alt="Game Cover image Cyberpunk"
-            />
-            <div class="game-info-container">
-              <div class="game-name">
-                <p class="game-main-title">Game Title</p>
-                <p>Subtitle</p>
-              </div>
-              <div class="console-icons">
-                <i class="fa-brands fa-playstation"></i>
-                <i class="fa-brands fa-xbox"></i>
-                <i class="fa-solid fa-laptop"></i>
-              </div>
-              <p class="game-price">$49.99</p>
-            </div>
-          </a>
-
-          <!-- GAME COVER -->
-          <a href="game-description.html" class="game-cover-container">
-            <img
-              src="images/spiderman-game-cover.png"
-              alt="Game Cover image Spiderman"
-            />
-            <div class="game-info-container">
-              <div class="game-name">
-                <p class="game-main-title">Game Title</p>
-                <p>Subtitle</p>
-              </div>
-              <div class="console-icons">
-                <i class="fa-brands fa-playstation"></i>
-                <i class="fa-brands fa-xbox"></i>
-                <i class="fa-solid fa-laptop"></i>
-              </div>
-              <p class="game-price">$49.99</p>
-            </div>
-          </a>
-
-          <!-- GAME COVER -->
-          <a href="game-description.html" class="game-cover-container">
-            <img
-              src="images/game-cover-car-game.png"
-              alt="Game Cover image Car Game"
-            />
-            <div class="game-info-container">
-              <div class="game-name">
-                <p class="game-main-title">Game Title</p>
-                <p>Subtitle</p>
-              </div>
-              <div class="console-icons">
-                <i class="fa-brands fa-playstation"></i>
-                <i class="fa-brands fa-xbox"></i>
-                <i class="fa-solid fa-laptop"></i>
-              </div>
-              <p class="game-price">$49.99</p>
-            </div>
-          </a>
-
-          <!-- GAME COVER -->
-          <a href="game-description.html" class="game-cover-container">
-            <img
-              src="images/game-cover-hogward-legacy.png"
-              alt="Game Cover image Hogward Legacy"
-            />
-            <div class="game-info-container">
-              <div class="game-name">
-                <p class="game-main-title">Game Title</p>
-                <p>Subtitle</p>
-              </div>
-              <div class="console-icons">
-                <i class="fa-brands fa-playstation"></i>
-                <i class="fa-brands fa-xbox"></i>
-                <i class="fa-solid fa-laptop"></i>
-              </div>
-              <p class="game-price">$49.99</p>
-            </div>
-          </a>
-
-          <!-- GAME COVER -->
-          <a href="game-description.html" class="game-cover-container">
-            <img
-              src="images/game-cover-kratos.jpg"
-              alt="Game Cover image God of War Kratos"
-            />
-            <div class="game-info-container">
-              <div class="game-name">
-                <p class="game-main-title">Game Title</p>
-                <p>Subtitle</p>
-              </div>
-              <div class="console-icons">
-                <i class="fa-brands fa-playstation"></i>
-                <i class="fa-brands fa-xbox"></i>
-                <i class="fa-solid fa-laptop"></i>
-              </div>
-              <p class="game-price">$49.99</p>
-            </div>
-          </a>
-        </div>
-        <div class="cta-more-games-container">
-          <a href="games.html" class="cta-more-games">More Games</a>
-        </div>
+        <div class="games-container"></div>
       </section>
 
       <!-- TRENDING GAMES -->
       <section class="section-width games-section-container">
         <h2>Trending Games</h2>
 
-        <div class="games-container trending-games">
-          <!-- GAME COVER -->
-          <a href="game-description.html" class="game-cover-container">
-            <img
-              src="images/game-cover-car-game.png"
-              alt="Game Cover image Car Game"
-            />
-            <div class="game-info-container">
-              <div class="game-name">
-                <p class="game-main-title">Game Title</p>
-                <p>Subtitle</p>
-              </div>
-              <div class="console-icons">
-                <i class="fa-brands fa-playstation"></i>
-                <i class="fa-brands fa-xbox"></i>
-                <i class="fa-solid fa-laptop"></i>
-              </div>
-              <p class="game-price">$49.99</p>
-            </div>
-          </a>
-
-          <!-- GAME COVER -->
-          <a href="game-description.html" class="game-cover-container">
-            <img
-              src="images/game-cover-hogward-legacy.png"
-              alt="Game Cover image Hogward Legacy"
-            />
-            <div class="game-info-container">
-              <div class="game-name">
-                <p class="game-main-title">Game Title</p>
-                <p>Subtitle</p>
-              </div>
-              <div class="console-icons">
-                <i class="fa-brands fa-playstation"></i>
-                <i class="fa-brands fa-xbox"></i>
-                <i class="fa-solid fa-laptop"></i>
-              </div>
-              <p class="game-price">$49.99</p>
-            </div>
-          </a>
-
-          <!-- GAME COVER -->
-          <a href="game-description.html" class="game-cover-container">
-            <img
-              src="images/game-cover-kratos.jpg"
-              alt="Game Cover image God of War Kratos"
-            />
-            <div class="game-info-container">
-              <div class="game-name">
-                <p class="game-main-title">Game Title</p>
-                <p>Subtitle</p>
-              </div>
-              <div class="console-icons">
-                <i class="fa-brands fa-playstation"></i>
-                <i class="fa-brands fa-xbox"></i>
-                <i class="fa-solid fa-laptop"></i>
-              </div>
-              <p class="game-price">$49.99</p>
-            </div>
-          </a>
-          <!-- GAME COVER -->
-          <a href="game-description.html" class="game-cover-container">
-            <img
-              src="images/digital-art-artwork-cyber-cyberpunk-neon-hd-wallpaper-thumb.jpg"
-              alt="Game Cover image Cyberpunk"
-            />
-            <div class="game-info-container">
-              <div class="game-name">
-                <p class="game-main-title">Game Title</p>
-                <p>Subtitle</p>
-              </div>
-              <div class="console-icons">
-                <i class="fa-brands fa-playstation"></i>
-                <i class="fa-brands fa-xbox"></i>
-                <i class="fa-solid fa-laptop"></i>
-              </div>
-              <p class="game-price">$49.99</p>
-            </div>
-          </a>
-
-          <!-- GAME COVER -->
-          <a href="game-description.html" class="game-cover-container">
-            <img
-              src="images/girl-the-city-the-game-neon-wallpaper-thumb.jpg"
-              alt="Game Cover image Cyberpunk"
-            />
-            <div class="game-info-container">
-              <div class="game-name">
-                <p class="game-main-title">Game Title</p>
-                <p>Subtitle</p>
-              </div>
-              <div class="console-icons">
-                <i class="fa-brands fa-playstation"></i>
-                <i class="fa-brands fa-xbox"></i>
-                <i class="fa-solid fa-laptop"></i>
-              </div>
-              <p class="game-price">$49.99</p>
-            </div>
-          </a>
-
-          <!-- GAME COVER -->
-          <a href="game-description.html" class="game-cover-container">
-            <img
-              src="images/spiderman-game-cover.png"
-              alt="Game Cover image Spiderman"
-            />
-            <div class="game-info-container">
-              <div class="game-name">
-                <p class="game-main-title">Game Title</p>
-                <p>Subtitle</p>
-              </div>
-              <div class="console-icons">
-                <i class="fa-brands fa-playstation"></i>
-                <i class="fa-brands fa-xbox"></i>
-                <i class="fa-solid fa-laptop"></i>
-              </div>
-              <p class="game-price">$49.99</p>
-            </div>
-          </a>
-        </div>
+        <div class="games-container trending-games"></div>
         <div class="cta-more-games-container">
           <a href="games.html" class="cta-more-games">More Games</a>
         </div>

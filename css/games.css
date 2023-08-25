@@ -57,8 +57,9 @@ h1 {
 
 .game-slide {
   position: relative;
-  max-width: 1000px;
-  height: 600px;
+  max-width: 550px;
+  height: 700px;
+  width: 95%;
   font-size: 2rem;
   display: flex;
   justify-content: center;
@@ -100,6 +101,26 @@ h1 {
 
 /* ALL GAMES SECTION */
 
+/* CATEGORIES */
+.game-categories {
+  font-size: 2rem;
+  color: #fcb221;
+  font-weight: 600;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 300px;
+
+  margin: auto;
+}
+
+.game-categories select {
+  padding: 10px;
+  font-size: 1.3rem;
+  margin-top: 15px;
+}
+
 .all-games-container {
   margin: 100px auto;
   text-align: center;
@@ -116,6 +137,7 @@ h1 {
   .slide-1 {
     background: url("../images/s-slider-1.png") no-repeat;
   }
+
   .slide-2 {
     background: url("../images/s-slider-2.jpg") no-repeat;
   }
@@ -136,7 +158,7 @@ h1 {
 
 /*  DESKTOPS ONLY*/
 @media (min-width: 769px) {
-  .slide-1 {
+  /* .slide-1 {
     background: url("../images/l-slider-1.jpg") no-repeat;
   }
   .slide-2 {
@@ -157,5 +179,5 @@ h1 {
   .slider-price-and-read-more {
     bottom: 150px;
     max-width: 500px;
-  }
+  } */
 }

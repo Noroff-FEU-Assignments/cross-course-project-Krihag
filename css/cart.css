@@ -3,7 +3,7 @@ main {
   margin-left: auto;
   margin-right: auto;
   font-size: 1.3rem;
-  padding: 0 15px;
+  padding: 0 5px;
 }
 
 .shopping-cart-container {
@@ -11,7 +11,7 @@ main {
 }
 
 .cart-games-and-remove {
-  padding: 50px 15px 0px;
+  padding: 50px 5px 0px;
   display: flex;
   align-items: top;
   justify-content: space-between;
@@ -19,23 +19,6 @@ main {
 .cart-games {
   display: flex;
   gap: 1rem;
-}
-
-.cart-game-1 {
-  background: url("../images/digital-art-artwork-cyber-cyberpunk-neon-hd-wallpaper-thumb.jpg")
-    no-repeat;
-  background-size: cover;
-  background-position: center;
-  min-width: 150px;
-  border-radius: 10px;
-}
-
-.cart-game-2 {
-  background: url("../images/game-cover-car-game.png") no-repeat;
-  background-size: cover;
-  background-position: center;
-  min-width: 150px;
-  border-radius: 10px;
 }
 
 .cart-game-info {
@@ -49,7 +32,13 @@ main {
 }
 
 .cart-remove {
-  color: #bd3434;
+  color: #d5ceca;
+  background: none;
+  border: none;
+  align-self: start;
+  padding: 5px;
+  cursor: pointer;
+  font-size: 1rem;
 }
 
 /* TOTAL PRICE AND CHECKOUT*/
@@ -67,8 +56,6 @@ main {
   display: block;
   margin: 10px auto 50px;
 }
-<<<<<<< Updated upstream
-=======
 
 .cart-item-images {
   height: 150px;
@@ -84,4 +71,3 @@ main {
   color: #fcb221;
   font-weight: 600;
 }
->>>>>>> Stashed changes

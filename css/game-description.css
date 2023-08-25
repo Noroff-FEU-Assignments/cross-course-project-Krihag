@@ -44,7 +44,7 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #5d0606;
+  background-color: #312f2f;
   width: 40%;
 }
 
@@ -58,9 +58,16 @@ h1 {
 }
 
 .buy-now-btn {
-  background: #014801;
-  border: 1px solid #042004;
+  background: #1e3f11;
+  border: 1px solid #200404;
   padding: 40px 0;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.buy-now-btn:hover {
+  background: #3c7c23;
+  transition: 700ms;
 }
 
 /* ARTICLE/ GAME DESCRIPTION  MAIN BODY */
@@ -110,8 +117,6 @@ h1 {
   padding: 20px 40px;
 }
 
-<<<<<<< Updated upstream
-=======
 .game-on-sale {
   display: inline-block;
   padding: 30px 15px;
@@ -122,13 +127,9 @@ h1 {
   border-radius: 10px;
 }
 
->>>>>>> Stashed changes
 /*MOBILE ONLY */
 @media (max-width: 480px) {
   .game-description-main-img {
-    background: url("../images/game-description-main.png") no-repeat;
-    background-size: cover;
-    background-position: top center;
     height: 400px;
   }
 
@@ -144,8 +145,6 @@ h1 {
 /* PADS AND DESKTOPS*/
 @media (min-width: 481px) {
   .game-description-main-img {
-    background: url("../images/game-description-main-big.png") no-repeat;
     height: 450px;
-    background-position: top center;
   }
 }
