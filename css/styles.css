@@ -256,6 +256,50 @@ footer i {
   border-radius: 50%;
 }
 
+/* ERRORS */
+.error-container {
+  background-color: rgb(253, 156, 156);
+  padding: 30px;
+  text-align: center;
+  border: 3px solid #bd1515;
+}
+.error-container p {
+  color: #bd1515;
+  font-weight: bold;
+  margin: 0;
+}
+
+.error-reload-button {
+  background: #bd1515;
+  padding: 5px 15px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.icon-error-container {
+  position: relative;
+}
+
+.error-help {
+  position: relative;
+  color: #dbd9d9;
+  font-size: 1.5rem;
+
+  margin: 10px;
+}
+
+.error-hidden-help {
+  position: absolute;
+  background: #f8ff9b;
+  color: #222;
+  padding: 10px 20px;
+  border: 1px solid #000;
+}
+
+.error-hidden {
+  display: none;
+}
+
 /*
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////// MEDIA QUERIES ///////////////////////////////////////

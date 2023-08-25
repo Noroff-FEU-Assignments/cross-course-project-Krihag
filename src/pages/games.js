@@ -1,16 +1,19 @@
 import fetchGames from "../Games/fetchGames.js";
 import displayGameSmall from "../Games/displayGameSmall/displayGameSmall.js";
 import gameSlider from "../Games/gameSlider/gameSlider.js";
+import errorHandling from "../Games/errorHandling.js";
 
 const url = "https://api.noroff.dev/api/v1/gamehub";
 const gamesContainer = document.querySelector(".games-container");
 const gameCategory = document.querySelector("#game-category");
+const sliderContainer = document.querySelector(".featured-games-container");
 
 const games = await fetchGames(url);
 
 if (games.errors) {
-  gamesContainer.innerHTML = `<div> ERROR: ${games.statusCode} ${games.status}</div>`;
-  console.log(games);
+  errorHandling(games, gamesContainer);
+  sliderContainer.innerHTML = "";
+  errorHandling(games, sliderContainer);
 } else {
   // GAME SLIDER
   gameSlider(games);

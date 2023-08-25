@@ -2,6 +2,7 @@ import fetchGames from "../Games/fetchGames.js";
 import salePrice from "../Games/displayGameSmall/gameInfoContainer/gamePrice/salePrice.js";
 import discountPercent from "../Games/displayGameSmall/gameInfoContainer/gamePrice/discountPercent.js";
 import addCartItem from "../Cart/addCartItem.js";
+import gameDetails from "../Games/gameDetailsPage/gameDetails.js";
 
 const imageContainer = document.querySelector(".game-description-main-img");
 const gameTitle = document.querySelector(".game-title");
@@ -18,6 +19,8 @@ const id = params.get("id");
 
 const games = await fetchGames(url);
 const game = games.find((game) => game.id === id);
+
+gameDetails(game);
 
 imageContainer.src = game.image;
 gameTitle.innerText = game.title;
