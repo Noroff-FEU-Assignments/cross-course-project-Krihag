@@ -1,9 +1,8 @@
 import fetchGames from "../Games/fetchGames.js";
 import displayHTML from "../Games/createHTML/displayHTML.js";
 import structure from "../Games/dataStructure/strGameSmall.js";
-import errorHandling from "../Games/errorHandling.js";
+import errorHandling from "../Games/errorHandling/errorHandling.js";
 
-console.log(structure);
 const [bestSellersCon, FeaturedGamesCon] =
   document.querySelectorAll(".games-container");
 

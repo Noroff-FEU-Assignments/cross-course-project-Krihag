@@ -1,4 +1,4 @@
-import errorHandling from "../Games/errorHandling.js";
+import errorHandling from "../Games/errorHandling/errorHandling.js";
 import fetchGames from "../Games/fetchGames.js";
 import strCartItem from "../Games/dataStructure/strCartItem.js";
 import displayHTML from "../Games/createHTML/displayHTML.js";

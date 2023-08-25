@@ -2,7 +2,7 @@ import fetchGames from "../Games/fetchGames.js";
 import displayGame from "../Games/createHTML/displayHTML.js";
 import structureSmall from "../Games/dataStructure/strGameSmall.js";
 import structureSlider from "../Games/dataStructure/strSlider.js";
-import errorHandling from "../Games/errorHandling.js";
+import errorHandling from "../Games/errorHandling/errorHandling.js";
 
 const gamesContainer = document.querySelector(".games-container");
 const gameCategory = document.querySelector("#game-category");
