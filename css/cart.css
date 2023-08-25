@@ -67,3 +67,21 @@ main {
   display: block;
   margin: 10px auto 50px;
 }
+<<<<<<< Updated upstream
+=======
+
+.cart-item-images {
+  height: 150px;
+}
+
+.hidden {
+  display: none;
+}
+
+.empty-cart {
+  font-size: 3rem;
+  text-align: center;
+  color: #fcb221;
+  font-weight: 600;
+}
+>>>>>>> Stashed changes

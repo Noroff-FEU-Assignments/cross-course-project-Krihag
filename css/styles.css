@@ -228,6 +228,82 @@ footer i {
   flex-direction: row-reverse;
 }
 
+<<<<<<< Updated upstream
+=======
+.non-discount-price {
+  text-decoration: line-through;
+  color: #d97676;
+  font-size: 85%;
+}
+
+.on-sale {
+  color: #fcb221;
+  font-weight: 600;
+}
+
+/* ADD TO CART */
+.add-item-to-cart {
+  position: relative;
+}
+.add-item-to-cart::after {
+  content: attr(title);
+  font-size: 50%;
+  position: absolute;
+  background: #97350e;
+  padding: 5px 8px;
+  color: #fff;
+  top: -10px;
+  left: 20px;
+  border-radius: 50%;
+}
+
+/* ERRORS */
+.error-container {
+  background-color: rgb(253, 156, 156);
+  padding: 30px;
+  text-align: center;
+  border: 3px solid #bd1515;
+  max-width: 400px;
+  margin: 20px auto;
+}
+.error-container p {
+  color: #bd1515;
+  font-weight: bold;
+  margin: 0;
+}
+
+.error-reload-button {
+  background: #bd1515;
+  padding: 5px 15px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.icon-error-container {
+  position: relative;
+}
+
+.error-help {
+  position: relative;
+  color: #dbd9d9;
+  font-size: 1.5rem;
+
+  margin: 10px;
+}
+
+.error-hidden-help {
+  position: absolute;
+  background: #f8ff9b;
+  color: #222;
+  padding: 10px 20px;
+  border: 1px solid #000;
+}
+
+.error-hidden {
+  display: none;
+}
+
+>>>>>>> Stashed changes
 /*
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////// MEDIA QUERIES ///////////////////////////////////////

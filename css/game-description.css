@@ -1,13 +1,19 @@
+body {
+  min-height: 100vh;
+}
+
 h1 {
   color: #fcb221;
 }
 
 /*GAME DESCRIPTION HEADER*/
+
 .article-header {
   text-align: center;
   font-size: 2rem;
   background: #111;
   padding: 100px 0 20px;
+  min-height: 90vh;
 }
 .article-header * {
   margin: 0;
@@ -19,6 +25,10 @@ h1 {
   flex-direction: column;
   max-width: 500px;
   margin: 50px auto;
+}
+.on-sale-container {
+  display: flex;
+  flex-direction: column;
 }
 
 .buy-cta-and-available-on {
@@ -100,6 +110,19 @@ h1 {
   padding: 20px 40px;
 }
 
+<<<<<<< Updated upstream
+=======
+.game-on-sale {
+  display: inline-block;
+  padding: 30px 15px;
+  background: #97350e;
+  width: 80%;
+  align-self: center;
+  margin-bottom: 50px;
+  border-radius: 10px;
+}
+
+>>>>>>> Stashed changes
 /*MOBILE ONLY */
 @media (max-width: 480px) {
   .game-description-main-img {
