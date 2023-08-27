@@ -22,6 +22,8 @@
     <!-- CSS FILES -->
     <link rel="stylesheet" href="CSS/styles.css" />
     <link rel="stylesheet" href="CSS/checkout.css" />
+
+    <script defer type="module" src="/src/pages/checkout.js"></script>
   </head>
   <body>
     <!-- HEADER AREA -->
@@ -105,35 +107,16 @@
         </section>
         <section class="order-summary">
           <h3>Order Summary:</h3>
-          <div class="cart-games">
-            <div class="cart-item-images cart-game-1"></div>
-            <div class="cart-game-info">
-              <div class="cart-game-name">
-                <p class="game-main-title">Game Title</p>
-                <p>subtitle</p>
-              </div>
-              <p class="game-price">$39.99</p>
-            </div>
+          <div class="all-cart-items"></div>
+
+  
           </div>
-          <div class="cart-games">
-            <div class="cart-item-images cart-game-2"></div>
-            <div class="cart-game-info">
-              <div class="cart-game-name">
-                <p class="game-main-title">Game Title</p>
-                <p>subtitle</p>
-              </div>
-              <p class="game-price">$25.00</p>
-            </div>
-          </div>
-          <div class="cart-total-and-checkout">
-            <div class="cart-total-price">
-              <p>Total:</p>
-              <p>$64.99</p>
-            </div>
-          </div>
+          
         </section>
       </div>
+      <div class="cart-total-price"></div>
       <a href="checkout-complete.html">
+
         <button class="cta-btn cta-checkout-buy">Buy Now</button></a
       >
     </main>
