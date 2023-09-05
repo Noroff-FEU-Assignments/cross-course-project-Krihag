@@ -137,6 +137,10 @@ h1 {
   margin-bottom: 15px;
 }
 
+.now-with-img {
+  border-radius: 15%;
+}
+
 /* Featured games (Best sellers / trending games) */
 
 .games-section-container {
