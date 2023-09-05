@@ -1,0 +1,100 @@
+main {
+  font-size: 1.3rem;
+}
+h1 {
+  color: #fcb221;
+}
+
+main input {
+  padding: 7px 0;
+  border-radius: 10px;
+}
+
+.payment-details-container {
+  margin: auto;
+}
+
+.payment-info-and-order-summary-container {
+  display: flex;
+  max-width: 750px;
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+.payment-info-and-order-summary-container {
+  margin: auto;
+}
+
+.payment-detail {
+  display: flex;
+  flex-direction: column;
+  max-width: 250px;
+  margin: 10px auto;
+}
+
+.expiration-date-and-ccv {
+  display: flex;
+  max-width: 250px;
+  gap: 2rem;
+  margin: auto;
+}
+
+.payment-ccv {
+  width: 70px;
+}
+
+/* ORDER SUMMARY */
+
+.cart-games {
+  display: flex;
+  gap: 1.5rem;
+  margin: 30px auto;
+}
+
+.cart-game-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cart-game-name p {
+  margin: 0;
+}
+
+.cart-remove {
+  color: #bd3434;
+}
+
+/* ORDER SUMMARY */
+
+.order-summary {
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: start;
+  max-width: 400px;
+}
+
+.cart-item-images {
+  height: 130px;
+}
+
+.cart-total-price {
+  font-size: 2.5rem;
+  color: #d3c15d;
+  font-weight: bold;
+  text-align: center;
+}
+
+/*BUY NOW BTN*/
+.cta-checkout-buy {
+  margin: 50px auto 100px;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  max-width: 650px;
+}

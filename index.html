@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Gamehub The Universe Of Games - Homepage"
+    />
+    <script
+      src="https://kit.fontawesome.com/dd3a44b56e.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Gamehub - Home</title>
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&family=Rajdhani:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS FILES -->
+    <link rel="stylesheet" href="CSS/styles.css" />
+    <link rel="stylesheet" href="CSS/index.css" />
+
+    <script defer type="module" src="/src/script.js"></script>
+    <script defer type="module" src="/src/pages/index.js"></script>
+  </head>
+  <body>
+    <!-- HEADER AREA -->
+    <header>
+      <div class="header-container">
+        <!-- hamburger menu -->
+        <input type="checkbox" id="menu-checkbox" />
+        <label for="menu-checkbox" class="label-hamburger"
+          ><i class="fa-solid fa-bars hamburger-icon"></i
+        ></label>
+        <a href="index.html" class="logo">Gamehub</a>
+
+        <!-- navbar with login / register -->
+        <div class="nav-bar-and-login-register">
+          <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="games.html">Games</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+          </nav>
+          <div class="login-register">
+            <a href="#">Log In</a>
+            <a href="#">Sign Up</a>
+          </div>
+        </div>
+
+        <!-- Search bar and cart icons -->
+        <div class="search-and-cart">
+          <a href="index.html"> <i class="fa-solid fa-magnifying-glass"></i></a>
+          <a href="cart.html"
+            ><i class="fa-solid fa-cart-shopping" id="cart"></i
+          ></a>
+        </div>
+      </div>
+    </header>
+
+    <!-- END of header - Main section  -->
+    <main>
+      <div class="header-background-img">
+        <h1>The universe of games</h1>
+      </div>
+      <!-- Main background image  -->
+      <!-- Main Article  -->
+      <article class="main-article-container">
+        <div class="loader-container">
+          <div class="loader-ring"></div>
+          <div class="loader-text">Loading...</div>
+        </div>
+
+        <div class="main-article-hide">
+          <section class="article-header section-width">
+            <h2>Coming soon</h2>
+            <img
+              src="/images/main-article-image.jpg"
+              alt="Elf archer girl with a bow in the forest with pink glowing flowers"
+            />
+
+            <h2 class="mar-pad-reset main-game-name"></h2>
+            <p class="align-center mar-pad-reset main-game-genre"></p>
+            <div class="main-game-description"></div>
+          </section>
+
+          <!-- Article body (main part) -->
+          <section class="article-body-container section-width">
+            <div class="article-body">
+              <div class="now-with-container">
+                <div>
+                  <img
+                    src="images/main-article-img-2.jpg"
+                    alt="Elf princess in the forest"
+                    class="now-with-img"
+                  />
+                </div>
+              </div>
+              <!-- Pre order date and price -->
+
+              <div class="release-date-container">
+                <p>Expected release <strong> April 1st</strong></p>
+                <p>Now available for pre-order</p>
+                <p class="pre-order-price">
+                  from: <strong class="main-game-price"></strong>
+                </p>
+              </div>
+
+              <!-- Pre order text and button -->
+            </div>
+          </section>
+          <div class="pre-order-btn-container">
+            <h3>Pre order today!</h3>
+            <a class="cta-btn main-game-read-more">Read more</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Best seller games -->
+      <section class="section-width games-section-container">
+        <h2>Best Sellers</h2>
+        <div class="games-container">
+          <div class="loader-container">
+            <div class="loader-ring"></div>
+            <div class="loader-text">Loading...</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TRENDING GAMES -->
+      <section class="section-width games-section-container">
+        <h2>Trending Games</h2>
+
+        <div class="games-container trending-games">
+          <div class="loader-container">
+            <div class="loader-ring"></div>
+            <div class="loader-text">Loading...</div>
+          </div>
+        </div>
+        <div class="cta-more-games-container">
+          <a href="games.html" class="cta-more-games">More Games</a>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <section class="sign-up-newsletter-container">
+          <h3>Newsletter</h3>
+          <div class="subscribe-newsletter">
+            <label for="email">Enter email:</label>
+            <input type="email" id="email" />
+            <button>subscribe now!</button>
+          </div>
+          <p>
+            Subscribe today and get important updates to your favorite games!
+          </p>
+        </section>
+        <section class="footer-some-icons-container">
+          <h3>Follow us on:</h3>
+          <div class="footer-some-icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+        </section>
+      </div>
+    </footer>
+  </body>
+</html>

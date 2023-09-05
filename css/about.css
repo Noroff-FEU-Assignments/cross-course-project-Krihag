@@ -1,0 +1,47 @@
+h1 {
+  color: #fcb221;
+}
+
+/*About us main photo and text*/
+.about-us-container {
+  margin: auto;
+  max-width: 1200px;
+  font-size: 2rem;
+}
+
+.about-us-text {
+  max-width: 90%;
+}
+
+/* MOBILE ONLY */
+@media (max-width: 480px) {
+  .about-us-main-img {
+    background: url("../images/about-us-photo.png") no-repeat;
+    height: 250px;
+    min-width: 100%;
+    background-size: cover;
+    background-position: top center;
+  }
+}
+
+/*PADS AND DESKTOPS */
+@media (min-width: 481px) {
+  .about-us-main-img {
+    background: url("../images/about-us-bigger-photo.jpg") no-repeat;
+
+    height: 350px;
+    background-size: cover;
+    background-position: top center;
+  }
+}
+
+/*DESKTOPS ONLY */
+@media (min-width: 769px) {
+  .about-us-main-img {
+    background: url("../images/about-us-bigger-photo.jpg") no-repeat;
+
+    height: 500px;
+    background-size: cover;
+    background-position: top center;
+  }
+}

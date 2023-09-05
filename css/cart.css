@@ -1,0 +1,73 @@
+main {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.3rem;
+  padding: 0 5px;
+}
+
+.shopping-cart-container {
+  padding-top: 150px;
+}
+
+.cart-games-and-remove {
+  padding: 50px 5px 0px;
+  display: flex;
+  align-items: top;
+  justify-content: space-between;
+}
+.cart-games {
+  display: flex;
+  gap: 1rem;
+}
+
+.cart-game-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cart-game-name p {
+  margin: 0;
+}
+
+.cart-remove {
+  color: #d5ceca;
+  background: none;
+  border: none;
+  align-self: start;
+  padding: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+/* TOTAL PRICE AND CHECKOUT*/
+
+.cart-total-and-checkout {
+  margin: 100px auto;
+}
+.cart-total-price {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 2rem;
+}
+
+.cart-total-and-checkout a {
+  display: block;
+  margin: 10px auto 50px;
+}
+
+.cart-item-images {
+  height: 150px;
+}
+
+.hidden {
+  display: none;
+}
+
+.empty-cart {
+  font-size: 3rem;
+  text-align: center;
+  color: #fcb221;
+  font-weight: 600;
+}

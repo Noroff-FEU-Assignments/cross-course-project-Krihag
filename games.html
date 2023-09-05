@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="over 12000+ games for all devices" />
+    <script
+      src="https://kit.fontawesome.com/dd3a44b56e.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Gamehub - All Games</title>
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&family=Rajdhani:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS FILES -->
+    <link rel="stylesheet" href="CSS/styles.css" />
+    <link rel="stylesheet" href="CSS/games.css" />
+
+    <script defer type="module" src="/src/script.js"></script>
+    <script defer type="module" src="/src/pages/games.js"></script>
+  </head>
+  <body>
+    <!-- HEADER AREA -->
+    <header>
+      <div class="header-container">
+        <!-- hamburger menu -->
+        <input type="checkbox" id="menu-checkbox" />
+        <label for="menu-checkbox" class="label-hamburger"
+          ><i class="fa-solid fa-bars hamburger-icon"></i
+        ></label>
+        <a href="index.html" class="logo">Gamehub</a>
+
+        <!-- navbar with login / register -->
+        <div class="nav-bar-and-login-register">
+          <nav>
+            <a href="index.html">Home</a>
+            <a href="games.html" class="active">Games</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+          </nav>
+          <div class="login-register">
+            <a href="#">Log In</a>
+            <a href="#">Sign Up</a>
+          </div>
+        </div>
+
+        <!-- Search bar and cart icons -->
+        <div class="search-and-cart">
+          <a href="index.html"> <i class="fa-solid fa-magnifying-glass"></i></a>
+          <a href="cart.html"
+            ><i class="fa-solid fa-cart-shopping" id="cart"></i
+          ></a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- FEATURED GAMES / SLIDER  -->
+      <section class="featured-games-container">
+        <h1>Featured Games</h1>
+        <div class="loader-container">
+          <div class="loader-ring"></div>
+          <div class="loader-text">Loading...</div>
+        </div>
+      </section>
+
+      <!-- ALL GAMES SECTION -->
+      <section class="all-games-container section-width">
+        <form action="#" class="game-categories">
+          <label for="game-category">Categories:</label>
+          <select name="game-category" id="game-category">
+            <option value="all-games">All Games</option>
+            <option value="action">Action</option>
+            <option value="adventure">Adventure</option>
+            <option value="sports">Sports</option>
+            <option value="horror">Horror</option>
+          </select>
+        </form>
+
+        <div class="games-container">
+          <div class="loader-container">
+            <div class="loader-ring"></div>
+            <div class="loader-text">Loading...</div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <section class="sign-up-newsletter-container">
+          <h3>Newsletter</h3>
+          <div class="subscribe-newsletter">
+            <label for="email">Enter email:</label>
+            <input type="email" id="email" />
+            <button>subscribe now!</button>
+          </div>
+          <p>
+            Subscribe today and get important updates to your favorite games!
+          </p>
+        </section>
+        <section class="footer-some-icons-container">
+          <h3>Follow us on:</h3>
+          <div class="footer-some-icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+        </section>
+      </div>
+    </footer>
+  </body>
+</html>

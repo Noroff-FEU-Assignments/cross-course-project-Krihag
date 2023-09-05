@@ -1,0 +1,488 @@
+/* Main selectors*/
+body {
+  margin: 0;
+  background: linear-gradient(#39479e, #292424) no-repeat;
+
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Rajdhani", sans-serif;
+}
+
+h1,
+h2,
+h3,
+button {
+  font-family: "Playfair Display SC", serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+p,
+div,
+a,
+button,
+h1 {
+  color: #fff;
+}
+
+header i,
+header a,
+header button,
+h2,
+h3,
+.game-price,
+.game-main-title {
+  color: #fcb221;
+  font-weight: 600;
+}
+
+h1,
+h2,
+h3,
+.align-center {
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  display: inline;
+  object-fit: cover;
+}
+
+ul {
+  padding: 0;
+}
+
+.section-width {
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* BTN */
+
+.cta-btn {
+  font-size: 1.5rem;
+  background: #852e08;
+  width: 100%;
+  padding: 25px 0;
+  margin: auto;
+  /* border: 1px solid #060d39; */
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cta-btn:hover {
+  background: #e55416;
+  transition: 0.5s;
+}
+
+/* hide checkbox to hamburger menu */
+#menu-checkbox {
+  display: none;
+}
+
+/* HEADER / NAVBAR */
+header {
+  background: #0e346d;
+  border-bottom: 2px solid #060d39;
+  font-size: 1.5rem;
+}
+
+.login-register {
+  font-size: 1.3rem;
+}
+
+.header-container {
+  max-width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  padding: 10px 20px;
+  position: relative;
+}
+
+.logo {
+  color: #f55c19;
+  font-weight: bold;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.logo:hover {
+  text-shadow: 0 0 15px #f1672b, 0 0 45px #f1672b;
+  transition: 1s;
+}
+
+.search-and-cart {
+  display: flex;
+  gap: 1rem;
+}
+
+/* HEADER HOVER EFFECTS */
+nav a:hover,
+header i:hover {
+  color: #ffe461;
+  transition: 0.5s;
+}
+
+.active {
+  text-decoration: underline;
+}
+
+/* FOOTER */
+
+footer {
+  background: #0e346d;
+  font-size: 2rem;
+  padding: 60px 20px 30px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+footer i {
+  font-size: 5rem;
+}
+
+.footer-container > * {
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.subscribe-newsletter {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.subscribe-newsletter > * {
+  padding: 20px;
+}
+
+.subscribe-newsletter button {
+  background: #852e08;
+  margin-top: 10px;
+  font-size: 2rem;
+}
+
+/* GAME COVER */
+
+.game-cover-container {
+  background-color: #041836;
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  border: 4px solid #041836;
+  border-radius: 8px;
+  box-shadow: 8px 10px 7px rgb(0 0 0 / 0.2);
+  /* margin: auto; */
+  width: 90%;
+  font-size: 1.2rem;
+}
+
+.game-cover-container img {
+  height: 370px;
+  object-position: top center;
+}
+
+.game-info-container {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+}
+
+.game-info-container * {
+  margin: 0;
+}
+
+.game-cover-container:hover {
+  border: 4px solid #fcb221;
+  transition: 1s;
+}
+
+/* GAMES CONTAINER */
+
+.games-container {
+  margin: 20px auto;
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  padding: 0 10px;
+  justify-content: center;
+}
+
+.trending-games {
+  flex-direction: row-reverse;
+}
+
+.non-discount-price {
+  text-decoration: line-through;
+  color: #d97676;
+  font-size: 85%;
+}
+
+.on-sale {
+  color: #fcb221;
+  font-weight: 600;
+}
+
+/* ADD TO CART */
+.add-item-to-cart {
+  position: relative;
+}
+.add-item-to-cart::after {
+  content: attr(title);
+  font-size: 50%;
+  position: absolute;
+  background: #97350e;
+  padding: 5px 8px;
+  color: #fff;
+  top: -10px;
+  left: 20px;
+  border-radius: 50%;
+}
+
+/* ERRORS */
+.error-container {
+  background-color: rgb(253, 156, 156);
+  padding: 30px;
+  text-align: center;
+  border: 3px solid #bd1515;
+  width: 300px;
+  max-width: 90%;
+  margin: 20px auto;
+}
+.error-container p {
+  color: #bd1515;
+  font-weight: bold;
+  margin: 0;
+}
+
+.error-reload-button {
+  background: #bd1515;
+  padding: 5px 15px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.icon-error-container {
+  position: relative;
+}
+
+.error-help {
+  position: relative;
+  color: #dbd9d9;
+  font-size: 1.5rem;
+
+  margin: 10px;
+}
+
+.error-hidden-help {
+  position: absolute;
+  background: #f8ff9b;
+  color: #222;
+  padding: 10px 20px;
+  border: 1px solid #000;
+}
+
+.error-hidden {
+  display: none;
+}
+
+/* LOADER */
+
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 30vh;
+}
+.loader-ring {
+  position: absolute;
+  width: 13rem;
+  height: 13rem;
+  border-radius: 50%;
+  animation: loader 1.4s linear infinite;
+}
+
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+    box-shadow: 2px 6px 3px #d09c48;
+  }
+  50% {
+    transform: rotate(180deg);
+    box-shadow: 2px 6px 3px #a5e787;
+  }
+  100% {
+    transform: rotate(360deg);
+    box-shadow: 2px 6px 3px #84dcd9;
+  }
+}
+
+.loader-ring:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+}
+
+.loader-text {
+  font-size: 1.2rem;
+  letter-spacing: 0.08rem;
+  text-transform: uppercase;
+  color: #b7b7b7;
+}
+/*
+//////////////////////////////////////////////////////////////////////////////
+//////////////////////// MEDIA QUERIES ///////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////
+*/
+
+/* MOBILE ONLY */
+
+@media (max-width: 480px) {
+  html {
+    font-size: 80%;
+  }
+
+  .game-cover-container {
+    font-size: 130%;
+  }
+}
+
+/*MOBILE AND PADS */
+
+@media (max-width: 768px) {
+  /* this margin is for resetting header margin on phone + pads since its position fixed*/
+  main {
+    margin-top: 57px;
+  }
+
+  /*HEADER */
+  header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+
+  .header-container {
+    justify-content: space-around;
+    gap: 1.5rem;
+  }
+
+  /* NAVBAR / HAMBURGER MENU STYLING */
+  .nav-bar-and-login-register {
+    display: none;
+    background: #0e346d;
+    width: 100%;
+    position: absolute;
+    top: 50px;
+    padding-top: 40px;
+    border-bottom: 2px solid #060d39;
+  }
+
+  .nav-bar-and-login-register a {
+    display: block;
+    margin: 50px auto;
+    padding: 5px 0;
+    position: relative;
+
+    width: 80%;
+    max-width: 450px;
+    min-width: 250px;
+  }
+
+  .login-register a {
+    background: #852e08;
+    padding: 20px 0;
+    text-align: center;
+    border: 1px solid #222;
+    color: #fff;
+  }
+  nav a::after {
+    content: ">";
+    position: absolute;
+    right: 0px;
+  }
+
+  /*FOOTER*/
+
+  footer {
+    font-size: 1.5rem;
+    margin: auto;
+  }
+
+  footer i {
+    font-size: 3rem;
+  }
+
+  .subscribe-newsletter button {
+    font-size: 1rem;
+    padding: 15px;
+    width: 75%;
+    margin: 5px auto;
+  }
+
+  .subscribe-newsletter input {
+    padding: 8px;
+    width: 70%;
+    margin: auto;
+  }
+
+  /* HOVER EFFECT MOBILE /PADS */
+  .login-register a:hover {
+    background: #e55416;
+    transition: 0.5s;
+  }
+
+  /* HAMBURGER MENU CLICKED */
+  #menu-checkbox:checked ~ .nav-bar-and-login-register {
+    display: block;
+  }
+}
+
+/* LAPTOPS / DESKTOPS ONLY */
+@media (min-width: 769px) {
+  /* HEADER */
+  .header-container {
+    padding: 50px 20px 20px;
+  }
+  header button {
+    background: none;
+  }
+  .label-hamburger {
+    display: none;
+  }
+  .nav-bar-and-login-register {
+    display: flex;
+    justify-content: space-evenly;
+    flex: 1;
+  }
+
+  nav,
+  .login-register {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1.5rem;
+  }
+}

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Shopping cart products Gamehub" />
+    <script
+      src="https://kit.fontawesome.com/dd3a44b56e.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Gamehub - Cart</title>
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&family=Rajdhani:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS FILES -->
+    <link rel="stylesheet" href="CSS/styles.css" />
+    <link rel="stylesheet" href="CSS/checkout.css" />
+
+    <script defer type="module" src="/src/pages/checkout.js"></script>
+  </head>
+  <body>
+    <!-- HEADER AREA -->
+    <header>
+      <div class="header-container">
+        <!-- hamburger menu -->
+        <input type="checkbox" id="menu-checkbox" />
+        <label for="menu-checkbox" class="label-hamburger"
+          ><i class="fa-solid fa-bars hamburger-icon"></i
+        ></label>
+        <a href="index.html" class="logo">Gamehub</a>
+
+        <!-- navbar with login / register -->
+        <div class="nav-bar-and-login-register">
+          <nav>
+            <a href="index.html">Home</a>
+            <a href="games.html">Games</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+          </nav>
+          <div class="login-register">
+            <a href="#">Log In</a>
+            <a href="#">Sign Up</a>
+          </div>
+        </div>
+
+        <!-- Search bar and cart icons -->
+        <div class="search-and-cart">
+          <a href="index.html"> <i class="fa-solid fa-magnifying-glass"></i></a>
+          <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <h1>Checkout</h1>
+      <div class="payment-info-and-order-summary-container">
+        <section class="payment-details-container">
+          <form class="payment-details-form">
+            <h2>Personal info:</h2>
+            <div class="payment-detail">
+              <label for="firstname">Full Name:</label>
+              <input type="text" id="firstname" />
+            </div>
+            <div class="payment-detail">
+              <label for="payment-email">Email:</label>
+              <input type="email" id="payment-email" />
+            </div>
+            <div class="payment-detail">
+              <label for="address">Delivery address: </label>
+              <input type="text" id="address" />
+            </div>
+          </form>
+          <form>
+            <h2>Payment Info:</h2>
+            <div class="payment-detail">
+              <label for="payment-card">Payment card number: </label>
+              <input
+                type="number"
+                id="payment-card"
+                placeholder=" xxxx-xxxx-xxxx-1234"
+              />
+            </div>
+            <div class="expiration-date-and-ccv">
+              <div class="payment-detail">
+                <label for="exp-date">Due date: </label>
+                <input
+                  type="month"
+                  id="start"
+                  name="start"
+                  min="2023-04"
+                  value="2023-05"
+                />
+              </div>
+              <div class="payment-detail payment-ccv">
+                <label for="CCV">CCV: </label>
+                <input type="number" id="exp-date" placeholder=" 987" />
+              </div>
+            </div>
+          </form>
+        </section>
+        <section class="order-summary">
+          <h3>Order Summary:</h3>
+          <div class="all-cart-items"></div>
+
+  
+          </div>
+          
+        </section>
+      </div>
+      <div class="cart-total-price"></div>
+      <a href="checkout-complete.html">
+
+        <button class="cta-btn cta-checkout-buy">Buy Now</button></a
+      >
+    </main>
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-container">
+        <section class="sign-up-newsletter-container">
+          <h3>Newsletter</h3>
+          <div class="subscribe-newsletter">
+            <label for="email">Enter email:</label>
+            <input type="email" id="email" />
+            <button>subscribe now!</button>
+          </div>
+          <p>
+            Subscribe today and get important updates to your favorite games!
+          </p>
+        </section>
+        <section class="footer-some-icons-container">
+          <h3>Follow us on:</h3>
+          <div class="footer-some-icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+        </section>
+      </div>
+    </footer>
+  </body>
+</html>
