@@ -262,7 +262,8 @@ footer i {
   padding: 30px;
   text-align: center;
   border: 3px solid #bd1515;
-  max-width: 400px;
+  width: 300px;
+  max-width: 90%;
   margin: 20px auto;
 }
 .error-container p {
@@ -302,6 +303,54 @@ footer i {
   display: none;
 }
 
+/* LOADER */
+
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 30vh;
+}
+.loader-ring {
+  position: absolute;
+  width: 13rem;
+  height: 13rem;
+  border-radius: 50%;
+  animation: loader 1.4s linear infinite;
+}
+
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+    box-shadow: 2px 6px 3px #d09c48;
+  }
+  50% {
+    transform: rotate(180deg);
+    box-shadow: 2px 6px 3px #a5e787;
+  }
+  100% {
+    transform: rotate(360deg);
+    box-shadow: 2px 6px 3px #84dcd9;
+  }
+}
+
+.loader-ring:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+}
+
+.loader-text {
+  font-size: 1.2rem;
+  letter-spacing: 0.08rem;
+  text-transform: uppercase;
+  color: #b7b7b7;
+}
 /*
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////// MEDIA QUERIES ///////////////////////////////////////

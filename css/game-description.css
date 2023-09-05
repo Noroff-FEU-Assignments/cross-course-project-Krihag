@@ -7,13 +7,19 @@ h1 {
 }
 
 /*GAME DESCRIPTION HEADER*/
+.article-header-container {
+  min-height: 95vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #111;
+}
 
 .article-header {
   text-align: center;
   font-size: 2rem;
-  background: #111;
-  padding: 100px 0 20px;
-  min-height: 90vh;
+  width: 650px;
+  max-width: 95%;
 }
 .article-header * {
   margin: 0;

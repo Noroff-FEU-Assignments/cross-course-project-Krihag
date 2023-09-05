@@ -66,69 +66,82 @@
 
     <!-- END of header - Main section  -->
     <main>
+      <div class="header-background-img">
+        <h1>The universe of games</h1>
+      </div>
       <!-- Main background image  -->
       <!-- Main Article  -->
       <article class="main-article-container">
-        <div class="header-background-img"></div>
+        <div class="loader-container">
+          <div class="loader-ring"></div>
+          <div class="loader-text">Loading...</div>
+        </div>
 
-        <section class="article-header section-width">
-          <h2>Coming soon</h2>
-          <img src="/images/spiderman-main.jpg" alt="Spiderman high air jump" />
+        <div class="main-article-hide">
+          <section class="article-header section-width">
+            <h2>Coming soon</h2>
+            <img
+              src="/images/main-article-image.jpg"
+              alt="Elf archer girl with a bow in the forest with pink glowing flowers"
+            />
 
-          <h2 class="mar-pad-reset">Spider Man VI</h2>
-          <p class="align-center mar-pad-reset">New spider web</p>
-        </section>
+            <h2 class="mar-pad-reset main-game-name"></h2>
+            <p class="align-center mar-pad-reset main-game-genre"></p>
+            <div class="main-game-description"></div>
+          </section>
 
-        <!-- Article body (main part) -->
-        <section class="article-body-container section-width">
-          <div class="article-body">
-            <div class="now-with-container">
-              <div>
-                <img
-                  src="images/Spiderman-now-with.jpg"
-                  alt="Spiderman looking down left"
-                />
+          <!-- Article body (main part) -->
+          <section class="article-body-container section-width">
+            <div class="article-body">
+              <div class="now-with-container">
+                <div>
+                  <img
+                    src="images/main-article-img-2.jpg"
+                    alt="Elf princess in the forest"
+                  />
+                </div>
               </div>
-              <div>
-                <h3>Now with</h3>
-                <ul>
-                  <li>Some perks</li>
-                  <li>Some perks</li>
-                  <li>Some perks</li>
-                  <li>Some perks</li>
-                  <li>Some perks</li>
-                </ul>
+              <!-- Pre order date and price -->
+
+              <div class="release-date-container">
+                <p>Expected release <strong> April 1st</strong></p>
+                <p>Now available for pre-order</p>
+                <p class="pre-order-price">
+                  from: <strong class="main-game-price"></strong>
+                </p>
               </div>
-            </div>
-            <!-- Pre order date and price -->
 
-            <div class="release-date-container">
-              <p>Expected release <strong> April 1st</strong></p>
-              <p>Now available for pre-order</p>
-              <p class="pre-order-price">from: <strong> $49.99</strong></p>
+              <!-- Pre order text and button -->
             </div>
-
-            <!-- Pre order text and button -->
+          </section>
+          <div class="pre-order-btn-container">
+            <h3>Pre order today!</h3>
+            <a class="cta-btn main-game-read-more">Read more</a>
           </div>
-        </section>
-        <div class="pre-order-btn-container">
-          <h3>Pre order today!</h3>
-          <button class="cta-btn">Pre-Order</button>
         </div>
       </article>
 
       <!-- Best seller games -->
       <section class="section-width games-section-container">
         <h2>Best Sellers</h2>
-
-        <div class="games-container"></div>
+        <div class="games-container">
+          <div class="loader-container">
+            <div class="loader-ring"></div>
+            <div class="loader-text">Loading...</div>
+          </div>
+        </div>
       </section>
 
       <!-- TRENDING GAMES -->
       <section class="section-width games-section-container">
         <h2>Trending Games</h2>
 
-        <div class="games-container trending-games"></div>
+        <div class="games-container trending-games">
+          <div class="loader-container">
+            <div class="loader-ring"></div>
+            <div class="loader-text">Loading...</div>
+          </div>
+        </div>
         <div class="cta-more-games-container">
           <a href="games.html" class="cta-more-games">More Games</a>
         </div>

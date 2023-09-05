@@ -1,27 +1,23 @@
 import fetchGames from "../Games/fetchGames.js";
 import displayGame from "../Games/createHTML/displayHTML.js";
 import structureSmall from "../Games/dataStructure/strGameSmall.js";
-import structureSlider from "../Games/dataStructure/strSlider.js";
 import errorHandling from "../Games/errorHandling/errorHandling.js";
+import slider from "../Games/slider.js";
 
 const gamesContainer = document.querySelector(".games-container");
 const gameCategory = document.querySelector("#game-category");
 const slideUpperContain = document.querySelector(".featured-games-container");
-const gameSlider = document.querySelector(".featured-games-slider");
+const loaders = document.querySelectorAll(".loader-container");
 
 const games = await fetchGames();
 
+loaders.forEach((loader) => loader.remove());
 if (games.errors) {
   errorHandling(games, slideUpperContain);
   errorHandling(games, gamesContainer);
 } else {
-  // Display slider games
-  displayGame(games[4], structureSlider, gameSlider);
-  displayGame(games[7], structureSlider, gameSlider);
-  displayGame(games[8], structureSlider, gameSlider);
-  displayGame(games[4], structureSlider, gameSlider);
+  slider(games, slideUpperContain);
 
-  // Display all games
   games.forEach((game) => displayGame(game, structureSmall, gamesContainer));
 
   // Change displayed games based on which category is clicked

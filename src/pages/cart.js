@@ -7,10 +7,13 @@ import getTotalPrice from "../Cart/getTotalPrice.js";
 
 const cartItemsContainer = document.querySelector(".shopping-cart-container");
 const totalPriceContainer = document.querySelector(".estimated-total");
+const priceContainer = document.querySelector(".cart-total-price");
 const paymentBtn = document.querySelector(".payment-btn");
+const loader = document.querySelector(".loader-container");
 
 const games = await fetchGames();
 
+loader.remove();
 if (games.errors) {
   errorHandling(games, cartItemsContainer);
 } else {
@@ -32,6 +35,7 @@ if (games.errors) {
 
     removeBtn.forEach((item) => removeItem(item));
 
+    priceContainer.classList.remove("hidden");
     paymentBtn.classList.remove("hidden");
   }
 
