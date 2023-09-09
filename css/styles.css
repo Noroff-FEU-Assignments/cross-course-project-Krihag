@@ -322,15 +322,15 @@ footer i {
 @keyframes loader {
   0% {
     transform: rotate(0deg);
-    box-shadow: 2px 6px 3px #d09c48;
+    box-shadow: 2px 6px 3px #8cee78;
   }
   50% {
     transform: rotate(180deg);
-    box-shadow: 2px 6px 3px #a5e787;
+    box-shadow: 2px 6px 3px #f14242;
   }
   100% {
     transform: rotate(360deg);
-    box-shadow: 2px 6px 3px #84dcd9;
+    box-shadow: 2px 6px 3px #1d6ed8;
   }
 }
 

@@ -20,6 +20,7 @@ h1 {
   font-size: 2rem;
   width: 650px;
   max-width: 95%;
+  margin: 100px auto;
 }
 .article-header * {
   margin: 0;

@@ -51,6 +51,10 @@ h1 {
   min-height: 400px;
   object-fit: cover;
   border-radius: 1rem;
+  width: 700px;
+  max-width: 95%;
+
+  margin: auto;
 }
 
 .main-game-description {
@@ -85,10 +89,11 @@ h1 {
 }
 
 .release-date-container {
-  background: #272760;
-  padding: 50px 25px;
+  background: linear-gradient(#4c5286, #0c0c10);
+  padding: 60px 40px;
   border-radius: 50%;
   box-shadow: 5px 7px 5px rgb(0 0 0 / 0.2);
+  font-size: 1rem;
 }
 
 .release-date-container p {
